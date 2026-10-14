@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f5f7fb">
+    <meta name="description" content="I.P. IronPixel Network — Global news, technology, artificial intelligence, video reports and analysis.">
+
+    <title>I.P. IronPixel Network — Global News</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <a href="#" class="brand" aria-label="IronPixel Network home">
+            <span class="brand-mark">IP</span>
+            <span class="brand-text">
+                <strong>I.P. IRONPIXEL</strong>
+                <small>NETWORK</small>
+            </span>
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="#home" data-i18n="navHome">Home</a>
+            <a href="#news" data-i18n="navNews">News</a>
+            <a href="#videos" data-i18n="navVideos">Videos</a>
+            <a href="#technology" data-i18n="navTechnology">Technology</a>
+            <a href="#analysis" data-i18n="navAnalysis">Analysis</a>
+        </nav>
+
+        <div class="header-actions">
+            <select id="languageSelect" aria-label="Choose language">
+                <option value="en">EN</option>
+                <option value="fa">فا</option>
+                <option value="fr">FR</option>
+                <option value="es">ES</option>
+                <option value="ko">KO</option>
+                <option value="ja">JA</option>
+                <option value="ar">AR</option>
+            </select>
+
+            <button id="themeToggle" type="button" aria-label="Toggle color theme">
+                ◐
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <span class="eyebrow" data-i18n="heroEyebrow">
+                    INDEPENDENT NEWS & TECHNOLOGY
+                </span>
+
+                <h1 data-i18n="heroTitle">
+                    The world, clearly understood.
+                </h1>
+
+                <p data-i18n="heroDescription">
+                    Global reporting, technology discoveries and in-depth analysis
+                    from I.P. IronPixel Network.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#news" class="button button-primary" data-i18n="exploreNews">
+                        Explore the news
+                    </a>
+
+                    <a href="#videos" class="button button-secondary" data-i18n="watchVideos">
+                        Watch videos
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual" aria-hidden="true">
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+                <div class="hero-monogram">IP</div>
+                <div class="hero-caption">GLOBAL · NEWS · TECHNOLOGY</div>
+            </div>
+        </section>
+
+        <section class="breaking-bar" aria-label="Latest headlines">
+            <span class="breaking-label" data-i18n="latest">LATEST</span>
+            <p id="breakingText" data-i18n="breakingPlaceholder">
+                Follow the latest verified reports from around the world.
+            </p>
+        </section>
+
+        <section class="section" id="news">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow" data-i18n="newsEyebrow">THE NEWSROOM</span>
+                    <h2 data-i18n="newsTitle">Latest news</h2>
+                    <p data-i18n="newsDescription">
+                        Important stories, carefully presented.
+                    </p>
+                </div>
+
+                <a href="#all-news" class="text-link" data-i18n="viewAll">
+                    View all →
+                </a>
+            </div>
+
+            <div class="news-grid" id="newsGrid">
+                <!-- News cards will be loaded from app.js -->
+            </div>
+
+            <div id="all-news" class="all-news-anchor"></div>
+        </section>
+
+        <section class="section video-section" id="videos">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow" data-i18n="videoEyebrow">WATCH & DISCOVER</span>
+                    <h2 data-i18n="videoTitle">Video reports</h2>
+                    <p data-i18n="videoDescription">
+                        Reports, interviews and visual stories.
+                    </p>
+                </div>
+            </div>
+
+            <div class="video-grid" id="videoGrid">
+                <!-- Video cards will be loaded from app.js -->
+            </div>
+        </section>
+
+        <section class="section technology-section" id="technology">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow" data-i18n="technologyEyebrow">THE FUTURE, EXPLAINED</span>
+                    <h2 data-i18n="technologyTitle">Technology & AI</h2>
+                    <p data-i18n="technologyDescription">
+                        Developments shaping science, business and everyday life.
+                    </p>
+                </div>
+            </div>
+
+            <div class="topic-grid">
+                <a class="topic-card" href="#news">
+                    <span class="topic-icon">✳</span>
+                    <strong data-i18n="topicAI">Artificial intelligence</strong>
+                    <span data-i18n="topicAIDesc">Models, research and innovation</span>
+                </a>
+
+                <a class="topic-card" href="#news">
+                    <span class="topic-icon">⌘</span>
+                    <strong data-i18n="topicScience">Science & computing</strong>
+                    <span data-i18n="topicScienceDesc">Discoveries and digital systems</span>
+                </a>
+
+                <a class="topic-card" href="#analysis">
+                    <span class="topic-icon">◎</span>
+                    <strong data-i18n="topicConflict">Conflict & technology</strong>
+                    <span data-i18n="topicConflictDesc">The impact of conflict on technology</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="analysis-banner" id="analysis">
+            <div>
+                <span class="eyebrow" data-i18n="analysisEyebrow">BEYOND THE HEADLINES</span>
+                <h2 data-i18n="analysisTitle">Understand the story behind the story.</h2>
+                <p data-i18n="analysisDescription">
+                    Context, evidence and perspectives on global events and technological change.
+                </p>
+            </div>
+
+            <a href="#news" class="button button-primary" data-i18n="readAnalysis">
+                Read our analysis
+            </a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a href="#home" class="footer-brand">I.P. IRONPIXEL NETWORK</a>
+
+        <p data-i18n="footerDescription">
+            Global news. Technology. Analysis.
+        </p>
+
+        <p class="copyright">
+            © <span id="currentYear">2026</span> I.P. IronPixel Network.
+            <span data-i18n="rights">All rights reserved.</span>
+        </p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
